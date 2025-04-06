@@ -1,0 +1,9 @@
+=SI.ERROR(SI(BUSCARV($F$12;Tabla4;1;FALSO)=0;"";(BUSCARV($F$12;Tabla4;1;FALSO)));"")
+=INDIRECTO("Tabla5[Referencia]")
+
+tabla	nombre
+1	Shipment
+4	Clientes
+5	Productos
+7	Pedidos
+9	Forma de Pago
