@@ -25,7 +25,7 @@ print (texto)
 print(texto.capitalize())
 print ("El nuevo id de memoria de la variable texto es :", id(texto))
 
-ano_admision=int(input("Digita año de admi¡sion : "))
+ano_admision=int(input("Digita año de admision : "))
 ano_salida=int(input("Digita año de salida : "))
 nota_admision=float(input("Digit la nota de admision : "))
 print(f'\t\nEl año de admision fue : {ano_admision} \t\nLa nota de admision fue : {nota_admision} \t\nEl año de salida fue : {ano_salida}')
