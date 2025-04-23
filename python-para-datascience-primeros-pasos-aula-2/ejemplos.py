@@ -1,4 +1,4 @@
-print("w\nI\nL\nM\nE\nR")
+      print("w\nI\nL\nM\nE\nR")
 
 a=10.56
 b=5
