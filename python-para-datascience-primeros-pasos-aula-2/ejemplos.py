@@ -1,5 +1,5 @@
-      print("w\nI\nL\nM\nE\nR")
-
+#Variables      
+print("w\nI\nL\nM\nE\nR")
 a=10.56
 b=5
 texto=" Maria tine Pies de Reyna "
