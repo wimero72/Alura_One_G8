@@ -7,10 +7,10 @@ valor_prome_ano2 = float(input("Digita el valor promedio del Mazda SUB CX9 del s
 valor_prome_ano3 = float(input("Digita el valor promedio del Mazda SUB CX9 del tercer año consecutivo : "))
 
 if valor_prome_ano1 > valor_prome_ano2 and valor_prome_ano1 > valor_prome_ano3:
-    if valor_prome_ano2>valor_prome_ano3
-        print("El valor promedio del 1er año consecutivo es el mayor %.2F y el del 3er año es el menor : %.2f " % (valor_prome_ano1, valor_prome_ano3)
-    else
-        print("El valor promedio del 1er año consecutivo es el mayor %.2F y el del 2er año es el menor : %.2f " % (valor_prome_ano1, valor_prome_ano2)
+    if valor_prome_ano2>valor_prome_ano3:
+        print("El valor promedio del 1er año consecutivo es el mayor %.2F y el del 3er año es el menor : %.2f " % (valor_prome_ano1, valor_prome_ano3))
+    else:
+        print("El valor promedio del 1er año consecutivo es el mayor %.2F y el del 2er año es el menor : %.2f " % (valor_prome_ano1, valor_prome_ano2))
 elif valor_prome_ano1 == valor_prome_ano2 and valor_prome_ano2== valor_prome_ano3:
     print("El valor promedio no cambio en los tres ultimos años : %.2F" % valor_prome_ano2)
 elif valor_prome_ano2>valor_prome_ano3:

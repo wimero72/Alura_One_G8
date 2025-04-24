@@ -16,8 +16,7 @@ print("Variable a =",a, "y tipo ", type(a),
       "\nLa Variable divide = a/b igual a :", divide, "y tipo ", type(divide))
 
 
-print (texto, 
-       "\nLa Variable texto es tipo :",type(texto),
+print (texto,"\nLa Variable texto es tipo :",type(texto),
        "\nEl id de memoria de la variable texto", id(texto))
 texto=texto.replace("in","ien").strip().upper().replace("Y","I")
 print(texto.lower())
