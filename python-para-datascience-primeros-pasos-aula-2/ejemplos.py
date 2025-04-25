@@ -47,3 +47,4 @@ print('Hola %s tienes %d años y mides %.2f metros de altura.' %(nombre, edad, a
 edad_alumno = 15
 media_alumno = 9.95
 print('Nombre del alumno es {}, tiene {} años y su media es {}.' .format(nombre, edad_alumno, media_alumno))
+print("El modulo de 0.2 es : ", (0.2%3))
