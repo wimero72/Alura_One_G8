@@ -5,154 +5,265 @@
 
 n1=(input("Introduzca el primer numero : "))
 n2=(input("Introduzca el segundo numero : "))
-oper=input("  1. Suma \n  2. Resta \n  3. Multiplicacion \n  4. Division \nDigita la operacion a efectuar de 1 a 4: ")
-#Operacion a ejecutar con el primer y segundo numero
-#Validacion de la opcion operacopm Resta
-if oper=="1":
-    #Validacion de primer numero
-    if '.' in n1:
-        n1 = float(n1)
-        msg1="Decimal"
-        if n1>0:
-            msg1+=", Positivo"
-        elif n1<0:
-            msg1+=", Negativo"
-        else:
-            msg1+=", Cero"
-        if n1%2==0:
-            msg1+=", Par"
-        else:
-            print(n1 % 2)
-            msg1+=", Impar"
 
-    elif n1.isdigit():
-        n1=int(n1)
-        msg1 = "Entero"
-        if n1>0:
-            msg1+=", Positivo"
-        elif n1<0:
-            msg1+=", Negativo"
-        else:
-            msg1+=", Cero"
-        if n1 % 2==0:
-            msg1 += ", Par"
-        else:
-            msg1 += ", Impar"
-            
-    #Validacion del segundo numero
-    if '.' in n2:
-        n2 = float(n2)
-        msg2 = "Decimal"
-        if n2>0:
-            msg2+=", Positivo"
-        elif n2<0:
-            msg2+=", Negativo"
-        else:
-            msg2+=", Cero"
-        if n2 % 2==0:
-            msg2 += ", Par"
-        else:
-            msg2 += ", Impar"
+result=0
 
-    elif n2.isdigit():
-        n2 = int(n2)
-        msg2 = "Entero"
-        if n2>0:
-            msg2+=", Positivo"
-        elif n2<0:
-            msg2+=", Negativo"
-        else:
-            msg2+=", Cero"
-        if n2 % 2==0:
-            msg2 += ", Par"
-        else:
-            print(n1 % 2)
-            msg2 += ", Impar"
-    else:
-        msg2=""
-        print("Para el segundo numero digite un valor numerico")
-
-#Impresion del resultado de la Suma y caracteristicas numericas de cada numero y el resultado
-    if msg1=="" or msg2=="":
-        print("vuelve a Intentarlo")
-    else:
-        print ("El primer numero ({}), es un numero {}, mas (+), \nEl segundo numero ({}) es un numero {} \nigual (=) a ({})".format(n1,msg1, n2,msg2, (n1+n2)))
-else:
-    print("Operacion Invalida")
-    
-#Validacion de la opcion operacopm Resta
-if oper=="2":
-    #Validacion del Primer numero intruducido
-    if '.' in n1:
-        n1 = float(n1)
-        msg1="Decimal"
-        if n1>0:
-            msg1+=", Positivo"
-        elif n1<0:
-            msg1+=", Negativo"
-        else:
-            msg1+=", Cero"
-        if n1%2==0:
-            msg1+=", Par"
-        else:
-            print(n1 % 2)
-            msg1+=", Impar"
-
-    elif n1.isdigit():
-        n1=int(n1)
-        msg1 = "Entero"
-        if n1>0:
-            msg1+=", Positivo"
-        elif n1<0:
-            msg1+=", Negativo"
-        else:
-            msg1+=", Cero"
-        if n1 % 2==0:
-            msg1 += ", Par"
-        else:
-            msg1 += ", Impar"
-            
-    else:
-        msg1=""
-        print("Para el primer numero digite un valor numerico")
-
-    #Validacion del Segundo numero introducido
-    if '.' in n2:
-        n2 = float(n2)
-        msg2 = "Decimal"
-        if n2>0:
-            msg2+=", Positivo"
-        elif n2<0:
-            msg2+=", Negativo"
-        else:
-            msg2+=", Cero"
-        if n2 % 2==0:
-            msg2 += ", Par"
-        else:
-            msg2 += ", Impar"
-
-    elif n2.isdigit():
-        n2 = int(n2)
-        msg2 = "Entero"
-        if n2>0:
-            msg2+=", Positivo"
-        elif n2<0:
-            msg2+=", Negativo"
-        else:
-            msg2+=", Cero"
-        if n2 % 2==0:
-            msg2 += ", Par"
-        else:
-            print(n1 % 2)
-            msg2 += ", Impar"
-    else:
-        msg2=""
-        print("Para el segundo numero digite un valor numerico")
+if n1.isdigit() and n2.isdigit():
+        #Menu de Operacion a ejecutar con los dos numero
+        oper=input("  1. Suma \n  2. Resta \n  3. Multiplicacion \n  4. Division \nDigita la operacion a efectuar de 1 a 4: ")
         
-#Impresion del resultado de la Resta y caracteristicas numericas de cada numero intriducido
-    if msg1=="" or msg2=="":
-        print("vuelve a Intentarlo")
-    else:
-        print ("El primer numero ({}), es un numero {}, mas (-), \nEl segundo numero ({}) es un numero {} \nigual (=) a ({})".format(n1, msg1, n2, msg2, (n1-n2)))
+        #Validacion de la opcion operacopm Suma
+        if oper=="1":
+            oper_desc="mas (+)"
+            #Validacion de primer numero de la Suma
+            if '.' in n1:
+                n1 = float(n1)  
+                result = n1
+                msg1="Decimal"
+                if n1>0:
+                    msg1+=", Positivo"
+                elif n1<0:
+                    msg1+=", Negativo"
+                else:
+                    msg1+=", Cero"
+                if n1%2==0:
+                    msg1+=", Par"
+                else:
+                    print(n1 % 2)
+                    msg1+=", Impar"
+
+            elif n1.isdigit():
+                n1 =  int(n1)
+                result = n1
+                msg1 = "Entero"
+                if n1>0:
+                    msg1+=", Positivo"
+                elif n1<0:
+                    msg1+=", Negativo"
+                else:
+                    msg1+=", Cero"
+                if n1 % 2==0:
+                    msg1 += ", Par"
+                else:
+                    msg1 += ", Impar"
+            else:
+                msg1=""
+                print("Para el primer numero digite un valor numerico")       
+                    
+            #Validacion del segundo numero de la Suma
+            if '.' in n2:
+                n2 = float(n2)
+                result += n2
+                msg2 = "Decimal"
+                if n2>0:
+                    msg2+=", Positivo"
+                elif n2<0:
+                    msg2+=", Negativo"
+                else:
+                    msg2+=", Cero"
+                if n2 % 2==0:
+                    msg2 += ", Par"
+                else:
+                    msg2 += ", Impar"
+
+            elif n2.isdigit():
+                n2 =  int(n2)
+                result += n2
+                msg2 = "Entero"
+                if n2>0:
+                    msg2+=", Positivo"
+                elif n2<0:
+                    msg2+=", Negativo"
+                else:
+                    msg2+=", Cero"
+                if n2 % 2==0:
+                    msg2 += ", Par"
+                else:
+                    print(n1 % 2)
+                    msg2 += ", Impar"
+            else:
+                msg2=""
+                print("Para el segundo numero digite un valor numerico")
+            
+         #Validacion de la opcion operacion Resta
+        elif oper=="2":
+            oper_desc="menos (-)"
+            #Validacion de primer numero de la Resta
+            if '.' in n1:
+                n1 = float(n1)  
+                result = n1
+                msg1="Decimal"
+                if n1>0:
+                    msg1+=", Positivo"
+                elif n1<0:
+                    msg1+=", Negativo"
+                else:
+                    msg1+=", Cero"
+                if n1%2==0:
+                    msg1+=", Par"
+                else:
+                    print(n1 % 2)
+                    msg1+=", Impar"
+
+            elif n1.isdigit():
+                n1 =  int(n1)
+                result = n1
+                msg1 = "Entero"
+                if n1>0:
+                    msg1+=", Positivo"
+                elif n1<0:
+                    msg1+=", Negativo"
+                else:
+                    msg1+=", Cero"
+                if n1 % 2==0:
+                    msg1 += ", Par"
+                else:
+                    msg1 += ", Impar"
+            else:
+                msg1=""
+                print("Para el primer numero digite un valor numerico")       
+                    
+            #Validacion del segundo numero de la Resta
+            if '.' in n2:
+                n2 = float(n2)
+                result -= n2
+                msg2 = "Decimal"
+                if n2>0:
+                    msg2+=", Positivo"
+                elif n2<0:
+                    msg2+=", Negativo"
+                else:
+                    msg2+=", Cero"
+                if n2 % 2==0:
+                    msg2 += ", Par"
+                else:
+                    msg2 += ", Impar"
+
+            elif n2.isdigit():
+                n2 =  int(n2)
+                result -= n2
+                msg2 = "Entero"
+                if n2>0:
+                    msg2+=", Positivo"
+                elif n2<0:
+                    msg2+=", Negativo"
+                else:
+                    msg2+=", Cero"
+                if n2 % 2==0:
+                    msg2 += ", Par"
+                else:
+                    print(n1 % 2)
+                    msg2 += ", Impar"
+            else:
+                msg2=""
+                print("Para el segundo numero digite un valor numerico")
+                
+          #Validacion de la opcion operacion Multiplicaion
+        elif oper=="3":
+            oper_desc="multiplicado (*)"
+            #Validacion de primer numero de la Multiplicacion
+            if '.' in n1:
+                n1 = float(n1)  
+                result = n1
+                msg1="Decimal"
+                if n1>0:
+                    msg1+=", Positivo"
+                elif n1<0:
+                    msg1+=", Negativo"
+                else:
+                    msg1+=", Cero"
+                if n1%2==0:
+                    msg1+=", Par"
+                else:
+                    print(n1 % 2)
+                    msg1+=", Impar"
+
+            elif n1.isdigit():
+                n1 =  int(n1)
+                result = n1
+                msg1 = "Entero"
+                if n1>0:
+                    msg1+=", Positivo"
+                elif n1<0:
+                    msg1+=", Negativo"
+                else:
+                    msg1+=", Cero"
+                if n1 % 2==0:
+                    msg1 += ", Par"
+                else:
+                    msg1 += ", Impar"
+            else:
+                msg1=""
+                print("Para el primer numero digite un valor numerico")       
+                    
+            #Validacion del segundo numero de la Multiplicacion
+            if '.' in n2:
+                n2 = float(n2)
+                result *= n2
+                msg2 = "Decimal"
+                if n2>0:
+                    msg2+=", Positivo"
+                elif n2<0:
+                    msg2+=", Negativo"
+                else:
+                    msg2+=", Cero"
+                if n2 % 2==0:
+                    msg2 += ", Par"
+                else:
+                    msg2 += ", Impar"
+
+            elif n2.isdigit():
+                n2 =  int(n2)
+                result *= n2
+                msg2 = "Entero"
+                if n2>0:
+                    msg2+=", Positivo"
+                elif n2<0:
+                    msg2+=", Negativo"
+                else:
+                    msg2+=", Cero"
+                if n2 % 2==0:
+                    msg2 += ", Par"
+                else:
+                    print(n1 % 2)
+                    msg2 += ", Impar"
+            else:
+                msg2=""
+                print("Para el segundo numero digite un valor numerico")
+                
+                
+        else:
+            print("Operacion Invalida")
 else:
-    print("Operacion Invalida")
+      print("los valores introducidos deben ser numericos, y los decimales separados por punto (.) en ves de coma(,)")
+print(result)            
+#Impresion del resultado de la Resta y caracteristicas numericas de cada numero intriducido
+if result==0:
+    print("vuelve a Intentarlo")
+else:
+    if result.isdigit():
+        msg3 = "Entero"
+        if result>0:
+           msg3+=", Positivo"
+        elif result<0:
+           msg3+=", Negativo"
+        else:
+           msg3+=", Cero"
+        if  result % 2==0:
+           msg3 += ", Par"
+        else:
+           msg3 += ", Impar"
+    else:
+        msg3 = "Decimal"
+        if result>0:
+           msg3+=", Positivo"
+        elif result<0:
+           msg3+=", Negativo"
+        else:
+           msg3+=", Cero"
+        if  result % 2==0:
+           msg3 += ", Par"
+        else:
+           msg3 += ", Impar"
+    
+    print ("El primer numero ({}), es un numero {}, {}, \nEl segundo numero ({}) es un numero {} \nigual (=) a ({}) y es un numero {}".format(n1, msg1, oper_desc, n2, msg2, result, msg3))
