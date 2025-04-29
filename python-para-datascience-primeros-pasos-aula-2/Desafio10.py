@@ -7,8 +7,7 @@ n1=(input("Introduzca el primer numero : "))
 n2=(input("Introduzca el segundo numero : "))
 
 result=0
-
-if n1.isdigit() and n2.isdigit():
+if n1.isdigit() or '.' in n1 or '-' and n2.isdigit() or '.' in n2 or '-':
         #Menu de Operacion a ejecutar con los dos numero
         oper=input("  1. Suma \n  2. Resta \n  3. Multiplicacion \n  4. Division \nDigita la operacion a efectuar de 1 a 4: ")
         
@@ -16,7 +15,7 @@ if n1.isdigit() and n2.isdigit():
         if oper=="1":
             oper_desc="mas (+)"
             #Validacion de primer numero de la Suma
-            if '.' in n1:
+            if '.' in n1 and '-' in n1 or "." in n1:
                 n1 = float(n1)  
                 result = n1
                 msg1="Decimal"
@@ -32,7 +31,7 @@ if n1.isdigit() and n2.isdigit():
                     print(n1 % 2)
                     msg1+=", Impar"
 
-            elif n1.isdigit():
+            elif "-" in n1 or n1.isdigit():
                 n1 =  int(n1)
                 result = n1
                 msg1 = "Entero"
@@ -235,13 +234,15 @@ if n1.isdigit() and n2.isdigit():
         else:
             print("Operacion Invalida")
 else:
-      print("los valores introducidos deben ser numericos, y los decimales separados por punto (.) en ves de coma(,)")
+    oper=""
+    print("los valores introducidos deben ser numericos, y los decimales separados por punto (.) en ves de coma(,)")
+
 print(result)            
 #Impresion del resultado de la Resta y caracteristicas numericas de cada numero intriducido
-if result==0:
+if result==0 and oper=="":
     print("vuelve a Intentarlo")
 else:
-    if result.isdigit():
+    if type(result) == int:
         msg3 = "Entero"
         if result>0:
            msg3+=", Positivo"
@@ -266,4 +267,4 @@ else:
         else:
            msg3 += ", Impar"
     
-    print ("El primer numero ({}), es un numero {}, {}, \nEl segundo numero ({}) es un numero {} \nigual (=) a ({}) y es un numero {}".format(n1, msg1, oper_desc, n2, msg2, result, msg3))
+    print ("El primer numero ({}), es un numero {}, {}, \nEl segundo numero ({}) es un numero {} \nigual (=) a ({}) es un numero {}".format(n1, msg1, oper_desc, n2, msg2, result, msg3))
