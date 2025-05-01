@@ -17,32 +17,30 @@ if n1.isdigit() or '.' in n1 or '-' and n2.isdigit() or '.' in n2 or '-':
             #Validacion de primer numero de la Suma
             if '.' in n1 and '-' in n1 or "." in n1:
                 n1 = float(n1)
-                print(n1)
-                result = n1
-                print(result)
-                msg1="Decimal"
+                result=n1
                 if n1>0:
-                    msg1+=", Positivo"
+                    msg1="Positivo"
                 elif n1<0:
-                    msg1+=", Negativo"
+                    msg1="Negativo"
                 else:
-                    msg1+=", Cero"
+                    msg1="Cero"
+                print(result)
+                msg1+=", Decimal"
                 if n1%2==0:
                     msg1+=", Par"
                 else:
                     msg1+=", Impar"
             elif "-" in n1 or n1.isdigit():
                 n1 =  int(n1)
-                print(n1)
-                result = n1
-                print(result)
-                msg1 = "Entero"
+                result=n1
                 if n1>0:
-                    msg1+=", Positivo"
+                    msg1="Positivo"
                 elif n1<0:
-                    msg1+=", Negativo"
+                    msg1="Negativo"
                 else:
-                    msg1+=", Cero"
+                    msg1="Cero"
+                print(result)
+                msg1+=", Entero"
                 if n1 % 2==0:
                     msg1 += ", Par"
                 else:
@@ -54,32 +52,30 @@ if n1.isdigit() or '.' in n1 or '-' and n2.isdigit() or '.' in n2 or '-':
             #Validacion del segundo numero de la Suma
             if '.' in n2 and '-' in n2 or "." in n2:
                 n2 = float(n2)
-                print(n2)
-                result += n2
-                print(result)
-                msg2 = "Decimal"
+                result+=n2
                 if n2>0:
-                    msg2+=", Positivo"
+                    msg2="Positivo"
                 elif n2<0:
-                    msg2+=", Negativo"
+                    msg2="Negativo"
                 else:
-                    msg2+=", Cero"
+                    msg2="Cero"
+                print(result)
+                msg2+=", Decimal"
                 if n2 % 2==0:
                     msg2 += ", Par"
                 else:
                     msg2 += ", Impar"
             elif '-' in n2 or n2.isdigit():
-                n2 =  int(n2)
-                print(n2)
-                result += n2
-                print(result)
-                msg2 = "Entero"
+                n2 = int(n2)
+                result+=n2
                 if n2>0:
-                    msg2+=", Positivo"
+                    msg2="Positivo"
                 elif n2<0:
-                    msg2+=", Negativo"
+                    msg2="Negativo"
                 else:
-                    msg2+=", Cero"
+                    msg2="Cero"
+                print(result)
+                msg2+=", Entero"
                 if n2 % 2==0:
                     msg2 += ", Par"
                 else:
@@ -94,16 +90,15 @@ if n1.isdigit() or '.' in n1 or '-' and n2.isdigit() or '.' in n2 or '-':
             #Validacion de primer numero de la Resta
             if '.' in n1 and '-' in n1 or "." in n1:
                 n1 = float(n1)
-                print(n1)  
-                result = n1
-                print(result)
-                msg1="Decimal"
+                result=n1
                 if n1>0:
-                    msg1+=", Positivo"
+                    msg1="Positivo"
                 elif n1<0:
-                    msg1+=", Negativo"
+                    msg1="Negativo"
                 else:
-                    msg1+=", Cero"
+                    msg1="Cero"
+                print(result)
+                msg1+=", Decimal"
                 if n1%2==0:
                     msg1+=", Par"
                 else:
@@ -111,16 +106,15 @@ if n1.isdigit() or '.' in n1 or '-' and n2.isdigit() or '.' in n2 or '-':
 
             elif "-" in n1 or n1.isdigit():
                 n1 =  int(n1)
-                print(n1)
-                result = n1
-                print(result)
-                msg1 = "Entero"
-                if n1>0:
-                    msg1+=", Positivo"
-                elif n1<0:
-                    msg1+=", Negativo"
+                result=n1
+                if n2>0:
+                    msg1="Positivo"
+                elif n2<0:
+                    msg1="Negativo"
                 else:
-                    msg1+=", Cero"
+                    msg1="Cero"
+                print(result)
+                msg1+=", Decimal"
                 if n1 % 2==0:
                     msg1 += ", Par"
                 else:
@@ -132,16 +126,15 @@ if n1.isdigit() or '.' in n1 or '-' and n2.isdigit() or '.' in n2 or '-':
             #Validacion del segundo numero de la Resta
             if '.' in n2 and '-' in n2 or "." in n2:
                 n2 = float(n2)
-                print(n2)
-                result -= n2
-                print(result)
-                msg2 = "Decimal"
+                result+=n2
                 if n2>0:
-                    msg2+=", Positivo"
+                    msg2="Positivo"
                 elif n2<0:
-                    msg2+=", Negativo"
+                    msg2="Negativo"
                 else:
-                    msg2+=", Cero"
+                    msg2="Cero"
+                print(result)
+                msg2+=", Decimal"
                 if n2 % 2==0:
                     msg2 += ", Par"
                 else:
@@ -149,16 +142,15 @@ if n1.isdigit() or '.' in n1 or '-' and n2.isdigit() or '.' in n2 or '-':
 
             elif "-" in n2 or n2.isdigit():
                 n2 =  int(n2)
-                print(n2)
-                result -= n2
-                print(result)
-                msg2 = "Entero"
+                result+=n2
                 if n2>0:
-                    msg2+=", Positivo"
+                    msg2="Positivo"
                 elif n2<0:
-                    msg2+=", Negativo"
+                    msg2="Negativo"
                 else:
-                    msg2+=", Cero"
+                    msg2="Cero"
+                print(result)
+                msg2+=", Entero"
                 if n2 % 2==0:
                     msg2 += ", Par"
                 else:
@@ -173,32 +165,30 @@ if n1.isdigit() or '.' in n1 or '-' and n2.isdigit() or '.' in n2 or '-':
             #Validacion de primer numero de la Multiplicacion
             if '.' in n1 and '-' in n1 or "." in n1:
                 n1 = float(n1)
-                print(n1)  
-                result = n1
-                print(result)
-                msg1="Decimal"
+                result=n1
                 if n1>0:
-                    msg1+=", Positivo"
+                    msg1="Positivo"
                 elif n1<0:
-                    msg1+=", Negativo"
+                    msg1="Negativo"
                 else:
-                    msg1+=", Cero"
+                    msg2="Cero"
+                print(result)
+                msg2+=", Decimal"
                 if n1%2==0:
                     msg1+=", Par"
                 else:
                     msg1+=", Impar"
             elif "-" in n1 or n1.isdigit():
                 n1 =  int(n1)
-                print(n1)
                 result = n1
-                print(result)
-                msg1 = "Entero"
                 if n1>0:
-                    msg1+=", Positivo"
+                    msg1="Positivo"
                 elif n1<0:
-                    msg1+=", Negativo"
+                    msg1="Negativo"
                 else:
-                    msg1+=", Cero"
+                    msg1="Cero"
+                print(result)
+                msg1+=", Entero"
                 if n1 % 2==0:
                     msg1 += ", Par"
                 else:
@@ -210,16 +200,15 @@ if n1.isdigit() or '.' in n1 or '-' and n2.isdigit() or '.' in n2 or '-':
             #Validacion del segundo numero de la Multiplicacion
             if '.' in n2 and '-' in n2 or "." in n2:
                 n2 = float(n2)
-                print(n2)
                 result *= n2
-                print(result)
-                msg2 = "Decimal"
                 if n2>0:
-                    msg2+=", Positivo"
+                    msg2="Positivo"
                 elif n2<0:
-                    msg2+=", Negativo"
+                    msg2="Negativo"
                 else:
-                    msg2+=", Cero"
+                    msg2="Cero"
+                print(result)
+                msg2+=", Decimal"
                 if n2 % 2==0:
                     msg2 += ", Par"
                 else:
@@ -227,16 +216,15 @@ if n1.isdigit() or '.' in n1 or '-' and n2.isdigit() or '.' in n2 or '-':
 
             elif "-" in n2 or n2.isdigit():
                 n2 =  int(n2)
-                print(n2)
                 result *= n2
-                print(result)
-                msg2 = "Entero"
                 if n2>0:
-                    msg2+=", Positivo"
+                    msg2="Positivo"
                 elif n2<0:
-                    msg2+=", Negativo"
+                    msg2="Negativo"
                 else:
-                    msg2+=", Cero"
+                    msg2="Cero"
+                print(result)
+                msg2+=", Entero"
                 if n2 % 2==0:
                     msg2 += ", Par"
                 else:
@@ -244,34 +232,35 @@ if n1.isdigit() or '.' in n1 or '-' and n2.isdigit() or '.' in n2 or '-':
         elif oper=="4":
             oper_desc="dividido (÷)"
             #Validacion de primer numero de la Division
-            if '.' in n2 and '-' in n2 or "." in n2:
+            if '.' in n1 and '-' in n1 or "." in n1:
                 n1 = float(n1)
-                print(n1)  
-                result = n1
-                print(result)
-                msg1="Decimal"
+                msg3=""
                 if n1>0:
-                    msg1+=", Positivo"
+                    result = n1
+                    msg1="Positivo"
                 elif n1<0:
-                    msg1+=", Negativo"
+                    result = n1
+                    msg1="Negativo"
                 else:
-                    msg1+=", Cero"
+                    msg3="Operacion Indefinida"
+                    msg1="Cero"
+                print(result)
+                msg1+=", Decimal"
                 if n1%2==0:
                     msg1+=", Par"
                 else:
                     msg1+=", Impar"
             elif "-" in n1 or n1.isdigit():
                 n1 =  int(n1)
-                print(n1)
                 result = n1
-                print(result)
-                msg1 = "Entero"
                 if n1>0:
-                    msg1+=", Positivo"
+                    msg1="Positivo"
                 elif n1<0:
-                    msg1+=", Negativo"
+                    msg1="Negativo"
                 else:
-                    msg1+=", Cero"
+                    msg1="Cero"
+                print(result)
+                msg1+=", Entero"
                 if n1 % 2==0:
                     msg1 += ", Par"
                 else:
@@ -284,15 +273,18 @@ if n1.isdigit() or '.' in n1 or '-' and n2.isdigit() or '.' in n2 or '-':
             if '.' in n2 and '-' in n2 or "." in n2:
                 n2 = float(n2)
                 print(n2)
-                result /= n2 #if n2>0 else "Error no se puede dividir entre 0" 
-                print(result)
-                msg2 = "Decimal"
                 if n2>0:
-                    msg2+=", Positivo"
+                    result /= n2
+                    msg2="Positivo"
                 elif n2<0:
-                    msg2+=", Negativo"
+                    result /= n2
+                    msg2="Negativo"
                 else:
-                    msg2+=", Cero"
+                    msg3="Operacion Indefinida"
+                    msg2="Cero"
+                    oper="indef"
+                print(result)
+                msg2 += ", Decimal"
                 if n2 % 2==0:
                     msg2 += ", Par"
                 else:
@@ -301,15 +293,18 @@ if n1.isdigit() or '.' in n1 or '-' and n2.isdigit() or '.' in n2 or '-':
             elif "-" in n2 or n2.isdigit():
                 n2 =  int(n2)
                 print(n2)
-                result /= n2 #if n2>0 else "Error no se puede dividir entre 0"
-                print(result)
-                msg2 = "Entero"
                 if n2>0:
-                    msg2+=", Positivo"
+                    result /= n2
+                    msg2="Positivo"
                 elif n2<0:
-                    msg2+=", Negativo"
+                    result /= n2
+                    msg2="Negativo"
                 else:
-                    msg2+=", Cero"
+                    msg3="Operacion Indefinida"
+                    msg2="Cero"
+                    oper="indef"
+                print(result)
+                msg2+=", Entero"
                 if n2 % 2==0:
                     msg2 += ", Par"
                 else:
@@ -323,12 +318,11 @@ if n1.isdigit() or '.' in n1 or '-' and n2.isdigit() or '.' in n2 or '-':
 else:
     oper=""
     print("los valores introducidos deben ser numericos, y los decimales separados por punto (.) en ves de coma(,)")
-
-print(result)            
 #Impresion del resultado de la Resta y caracteristicas numericas de cada numero intriducido
 if result==0 and oper=="" or msg1=="" or msg2=="":
     print("Vuelve a Intentarlo")
-else:
+elif oper in "1234":
+    msg4="es un numero"
     if type(result) == int:
         msg3 = "Entero"
         if result>0:
@@ -338,10 +332,11 @@ else:
         else:
            msg3+=", Cero"
         if  result % 2==0:
-           msg3 += ", Par"
+           msg3+=", Par"
         else:
-           msg3 += ", Impar"
+           msg3+=", Impar"
     else:
+        msg4="es un numero"
         msg3 = "Decimal"
         if result>0:
            msg3+=", Positivo"
@@ -353,5 +348,6 @@ else:
            msg3 += ", Par"
         else:
            msg3 += ", Impar"
-    
-    print ("El primer numero ({}), es un {}, {}, \nEl segundo numero ({}) es un numero {} \nigual (=) a ({}) es un numero {}".format(n1, msg1, oper_desc, n2, msg2, result, msg3))
+else:
+     msg4="Division entre 0"  
+print ("El primer numero ({}), es {}, {}, \nEl segundo numero ({}) es {} \nigual (=) a ({}) {}".format(n1, msg1, oper_desc, n2, msg2, result, ((msg4+" "+msg3) if msg4!="" else msg4)))
