@@ -14,7 +14,6 @@ try:
             operar=True
             if n1.is_integer():
                 n1 = int(n1)
-                print("n1 Entero")
                 if n1>0:
                     msg1="Positivo"
                 elif n1<0:
@@ -28,7 +27,6 @@ try:
                     msg1+=", Impar"
             elif isinstance(n1, float):
                 n1 =  float(n1)
-                print("n1 decimal")
                 if n1>0:
                     msg1="Positivo"
                 elif n1<0:
@@ -48,8 +46,6 @@ try:
             operar=True
             if n2.is_integer():
                 n2 = int(n2)
-                print("n2 entero")
-                print(n2)
                 if n2>0:
                     msg2="Positivo"
                 elif n2<0:
@@ -64,7 +60,6 @@ try:
 
             elif isinstance(n2, float):
                 n2 =  float(n2)
-                print("n2 decimal")
                 if n2>0:
                     msg2="Positivo"
                 elif n2<0:
@@ -133,7 +128,7 @@ if operar:
            msg3 += ", Impar"
 else:
     msg3=""
-    msg4="Division entre 0"
+    msg4="No se puede dividir entre 0"
     print("Vuelve a Intentarlo")
   
-print ("El primer numero ({}), es {}, {}, \nEl segundo numero ({}) es {} \nigual (=) a ({}) {}".format(n1, msg1, oper_desc, n2, msg2, ("X" if operar==False else result), ((msg4+" "+msg3) if msg4!="" else msg4)))
+print ("El primer numero ({}), es {}, {}, \nEl segundo numero ({}) es {} \nigual (=) a ({}) {}".format(n1, msg1, oper_desc, n2, msg2, ("X" if operar==False else result), ((msg4+" "+msg3) if operar else msg4)))
